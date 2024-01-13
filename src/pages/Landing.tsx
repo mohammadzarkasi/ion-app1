@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonCardContent, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import { IonButton, IonCard, IonCardContent, IonContent, IonHeader, IonPage, IonText, IonTitle, IonToolbar } from "@ionic/react";
 
 const LandingPage: React.FC = () => {
     return (
@@ -12,7 +12,9 @@ const LandingPage: React.FC = () => {
         <IonContent>
             <IonCard>
                 <IonCardContent>
-                    Hello World
+                    <IonText >
+                        Hello World
+                    </IonText>
                     <IonButton type="button" routerLink="/login">Login</IonButton>
                 </IonCardContent>
             </IonCard>
