@@ -12,7 +12,7 @@ const RegisterPage: React.FC = () => {
             <IonHeader>
                 <IonToolbar color={'primary'}>
                     <IonButtons slot="start">
-                        <IonBackButton />
+                        <IonBackButton defaultHref="/login" />
                     </IonButtons>
                     <IonTitle>Register</IonTitle>
                 </IonToolbar>
@@ -22,11 +22,11 @@ const RegisterPage: React.FC = () => {
                 <IonCard>
                     <IonCardContent>
                         <form onSubmit={doRegister}>
-                            <IonInput label="Username" type="text" placeholder="350xxxxxxx" fill="outline" labelPlacement="floating" className="ion-margin-top"/>
-                            <IonInput label="Password" type="password" placeholder="" fill="outline" labelPlacement="floating" className="ion-margin-top"/>
-                            <IonInput label="Ulangi Password" type="password" placeholder="" fill="outline" labelPlacement="floating" className="ion-margin-top"/>
+                            <IonInput label="Username" type="text" placeholder="350xxxxxxx" fill="outline" labelPlacement="floating" className="ion-margin-top" />
+                            <IonInput label="Password" type="password" placeholder="" fill="outline" labelPlacement="floating" className="ion-margin-top" />
+                            <IonInput label="Ulangi Password" type="password" placeholder="" fill="outline" labelPlacement="floating" className="ion-margin-top" />
                             <IonButton type="submit" expand="block" color={'danger'}>Register</IonButton>
-                            <IonButton type="button" expand="block" color={"primary"} routerLink="/login">Login</IonButton>
+                            {/* <IonButton type="button" expand="block" color={"primary"} routerLink="/login">Login</IonButton> */}
                         </form>
                     </IonCardContent>
                 </IonCard>
