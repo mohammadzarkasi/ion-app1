@@ -1,13 +1,16 @@
-import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar } from "@ionic/react";
+import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, useIonRouter } from "@ionic/react";
 import { SyntheticEvent } from "react";
 
 const LoginPage: React.FC = () => {
+
+    const router = useIonRouter();
 
     const doLogin = (ev: any) => {
         ev.preventDefault();
         console.log(ev.constructor.name);
         console.log(ev);
         console.log('do login');
+        router.push('/dashboard', 'root');
     }
 
     return (

@@ -2,24 +2,24 @@ import { IonButton, IonCard, IonCardContent, IonContent, IonHeader, IonPage, Ion
 
 const LandingPage: React.FC = () => {
     return (
-    <IonPage>
-        <IonHeader>
-            <IonToolbar color={'primary'}>
-                <IonTitle>Selamat Datang</IonTitle>
-            </IonToolbar>
-        </IonHeader>
+        <IonPage>
+            <IonHeader>
+                <IonToolbar color={'primary'}>
+                    <IonTitle>Selamat Datang</IonTitle>
+                </IonToolbar>
+            </IonHeader>
 
-        <IonContent>
-            <IonCard>
-                <IonCardContent>
-                    <IonText >
-                        Hello World
-                    </IonText>
-                    <IonButton type="button" routerLink="/login">Login</IonButton>
-                </IonCardContent>
-            </IonCard>
-        </IonContent>
-    </IonPage>
+            <IonContent>
+                <IonCard>
+                    <IonCardContent>
+                        <p>
+                            Hello World
+                        </p>
+                        <IonButton type="button" routerLink="/login">Login</IonButton>
+                    </IonCardContent>
+                </IonCard>
+            </IonContent>
+        </IonPage>
     );
 }
 
